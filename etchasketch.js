@@ -1,8 +1,7 @@
 
-// var input=prompt("Choose grid size from 1 to 64");-->
-var gridSize=90*44;
+ var input=64;
 
-console.log(gridSize);
+
 
 
 
@@ -10,30 +9,51 @@ $(document).ready(function(){
 	grid();
 	color();
 	reset();
-	getElementsByTagName();
+	gridUpdate();
+	/*getRandomColor();*/
 });
  
 function grid(){
+	var gridSize=input*input;
+	var pixelSize=500/input;
+
 for(var i=0;i<gridSize;i++){
 
 	var size=$("<div class=\"pixel\"></div>");
 $("#mainScreen").append(size);
 console.log(i);
 }
+
+ 	$(".pixel").css("height", pixelSize);
+ 	$(".pixel").css("width", pixelSize);
+
+
 };
 
 function color(){
 	$(".pixel").hover(function(){
-		$(this).css("background-color", "black")
+		$(this).css("background", "black")
 
 	}
 )};
 
 function reset(){
 	$("#reset").click(function(){
-		$("#pixel").css("background", "")
+		$(".pixel").css("background", "")
 	});
 };
+
+function gridUpdate(){
+	$("#updateGrid").click(function(){
+		input=$("#input").val();
+		$("#mainScreen").empty();
+		console.log(input);
+		grid();
+		color();
+		reset();
+	});
+};
+
 
 /*	function getRandomColor() {
         var letters = '0123456789ABCDEF'.split('');
@@ -47,7 +67,7 @@ function reset(){
     });
     }
 } */
-
+console.log($("#input"));
 grid();
 color();
 reset();
