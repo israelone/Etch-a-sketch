@@ -1,17 +1,23 @@
+body, html{
+	height: 100%;
+	margin:0 auto;
+}
+
 #frame{
-	margin:auto;
+	margin:20px auto;
 	height: 700px;
 	width:600px;
 	background-color: red;
 	border:5px solid black ;
 	border-radius: 10px;
 	position: relative;
+
 }
 
 #mainScreen{
 	
 	display: inline-block;
-	margin:40px 0 0 0;
+	margin:55px 0 0 0;
 	height: 500px;
 	width: 500px;
 	background-color: white;
@@ -24,20 +30,16 @@
 
 .button{
 
-display: block;
+	display: block;
 	height: 80px;
 	width: 80px;
-
 	background-color: white;
 	border:5px solid black;
 	border-radius: 100%;
 }
 
 .pixel{
-
-
 	display: inline-block;
-	
 	float: left;
 }
 
@@ -46,10 +48,7 @@ display: block;
 	top:  64px;
 	left: 166px;
 	
-	/*border-radius: 100%;
-	background-color: white;
-	border: 2px solid black;
-	outline: none; */
+
 }
 
 #input{
@@ -60,7 +59,12 @@ display: block;
 	display: inline-block;
 	
 }
-
+#random{
+	 position: absolute;
+	 top: 92px;
+	 left: 153px;
+	 display: inline-block;
+}
 #updateGrid{
 	position: absolute;
 	top:64px ;
@@ -68,5 +72,5 @@ display: block;
 }
 
 h1{
-	margin:0 0 0 250px;
+	text-align: center;
 }
