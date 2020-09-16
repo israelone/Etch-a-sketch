@@ -1,76 +1,64 @@
-body, html{
-	height: 100%;
-	margin:0 auto;
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
 }
 
-#frame{
-	margin:20px auto;
-	height: 700px;
-	width:600px;
-	background-color: red;
-	border:5px solid black ;
-	border-radius: 10px;
-	position: relative;
-
+#buttons {
+  text-align: center;
 }
 
-#mainScreen{
-	
-	display: inline-block;
-	margin:55px 0 0 0;
-	height: 500px;
-	width: 500px;
-	background-color: white;
-	border:2px solid black;
-	border-radius: 10px;
-	position: absolute;
-	left:50px;
-	
+#frame {
+  text-align: center;
+  margin: 20px auto;
+  height: 700px;
+  width: 600px;
+  background-color: red;
+  border: 5px solid black;
+  border-radius: 10px;
+  position: relative;
 }
 
-.button{
-
-	display: block;
-	height: 80px;
-	width: 80px;
-	background-color: white;
-	border:5px solid black;
-	border-radius: 100%;
+#mainScreen {
+  display: inline-block;
+  margin-top: 20px;
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 10px;
 }
 
-.pixel{
-	display: inline-block;
-	float: left;
+.button {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 100%;
 }
 
-#reset{
-	position: absolute;
-	top:  64px;
-	left: 166px;
-	
-
+.pixel {
+  display: inline-block;
+  float: left;
 }
 
-#input{
-
-	position: absolute;
-	top:64px;
-	left:269px;
-	display: inline-block;
-	
-}
-#random{
-	 position: absolute;
-	 top: 92px;
-	 left: 153px;
-	 display: inline-block;
-}
-#updateGrid{
-	position: absolute;
-	top:64px ;
-	left:352px;
+#input {
+  top: 64px;
+  left: 269px;
+  display: inline-block;
 }
 
-h1{
-	text-align: center;
+#randomButton {
+  top: 92px;
+  left: 153px;
+  display: inline-block;
+}
+
+#updateGrid {
+  top: 64px;
+  left: 352px;
+}
+
+h1 {
+  text-align: center;
 }
